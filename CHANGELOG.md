@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## Version 2026.08.10-fiora.21
+
+### Documentation Update
+- **AGENT.md**: Cập nhật tệp [`AGENT.md`](file:///Users/thang.dc/Documents/GitHub/it-tools/AGENT.md) và [`.agents/AGENT.md`](file:///Users/thang.dc/Documents/GitHub/it-tools/.agents/AGENT.md) chuyển thương hiệu dự án thành **YURI TOOLS** hoạt động độc lập, làm sạch các thông tin không cần thiết.
+
 ## Version 2026.08.10-fiora.20
 
 ### Git & Docker Deployment

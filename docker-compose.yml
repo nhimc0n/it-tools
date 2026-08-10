@@ -1,0 +1,15 @@
+services:
+  yuri-tools:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: yuri-tools
+    restart: unless-stopped
+    ports:
+      - "6688:80"
+    networks:
+      - proxy_network
+
+networks:
+  proxy_network:
+    external: true

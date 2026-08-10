@@ -60,6 +60,7 @@ search:
 tools:
   categories:
     favorite-tools: 'Công cụ yêu thích của bạn'
+    fiora accounting: 'Fiora Accounting'
     crypto: Mã hóa
     converter: Chuyển đổi
     web: Web
@@ -70,6 +71,93 @@ tools:
     measurement: Đo lường
     text: Văn bản
     data: Dữ liệu
+
+  fiora-number-to-words:
+    title: 'Đổi số thành chữ (Việt-Trung)'
+    description: 'Đổi số tiền VNĐ sang chữ Tiếng Việt chính tả & Tiếng Trung Đại Tả (大写) chống sửa đổi.'
+    inputTitle: 'Nhập số tiền cần đổi (VNĐ)'
+    placeholder: 'Nhập số tiền...'
+    fast: 'Nhanh:'
+    viCardTitle: 'Tiếng Việt'
+    enCardTitle: 'Tiếng Anh'
+    zhCardTitle: 'Tiếng Trung (Đại tả 大写)'
+    emptyResult: 'Nhập số tiền để xem kết quả...'
+    copy: 'Sao chép'
+    copyRawToolTip: 'Sao chép số tiền không chứa dấu phẩy'
+    copyRawSuccess: 'Đã sao chép số tiền không chứa dấu phẩy vào bộ nhớ tạm'
+    copyViSuccess: 'Đã sao chép chữ Tiếng Việt vào bộ nhớ tạm'
+    copyEnSuccess: 'Đã sao chép chữ Tiếng Anh vào bộ nhớ tạm'
+    copyZhSuccess: 'Đã sao chép chữ Tiếng Trung (Đại tả) vào bộ nhớ tạm'
+    copyViToolTip: 'Sao chép chữ Tiếng Việt'
+    copyEnToolTip: 'Sao chép chữ Tiếng Anh'
+    copyZhToolTip: 'Sao chép chữ Tiếng Trung (Đại tả)'
+    error: 'Số tiền không hợp lệ'
+
+  fiora-vat-calculator:
+    title: 'Tính thuế VAT (NĐ 174)'
+    description: 'Tính thuế VAT (Thuận & Ngược) chuẩn làm tròn Nghị định 174/2016/NĐ-CP (Round-Half-Up).'
+    configTitle: 'Cấu hình tính thuế VAT (Chuẩn Nghị định 174)'
+    modeLabel: 'CHẾ ĐỘ TÍNH THUẾ'
+    modeForward: 'Tính xuôi (Nhập giá chưa thuế)'
+    modeReverse: 'Tính ngược (Nhập giá đã có thuế)'
+    modeForwardShort: 'Tính xuôi'
+    modeReverseShort: 'Tính ngược'
+    inputForward: 'NHẬP GIÁ CHƯA THUẾ (VNĐ)'
+    inputReverse: 'NHẬP GIÁ ĐÃ CÓ THUẾ (VNĐ)'
+    placeholder: 'Nhập số tiền...'
+    copyRawToolTip: 'Sao chép số tiền không chứa dấu phẩy'
+    copyRawSuccess: 'Đã sao chép số tiền không chứa dấu phẩy vào bộ nhớ tạm'
+    copyBeforeTaxToolTip: 'Sao chép giá trước thuế'
+    copyVatAmountToolTip: 'Sao chép tiền thuế VAT'
+    copyTotalAmountToolTip: 'Sao chép tổng tiền thanh toán'
+    copyBeforeTaxSuccess: 'Đã sao chép giá trước thuế vào bộ nhớ tạm'
+    copyVatAmountSuccess: 'Đã sao chép tiền thuế VAT vào bộ nhớ tạm'
+    copyTotalAmountSuccess: 'Đã sao chép tổng tiền thanh toán vào bộ nhớ tạm'
+    rateLabel: 'THUẾ SUẤT VAT (%)'
+    other: 'Khác:'
+    resultTitle: 'Phiếu kết quả tính thuế VAT'
+    beforeTax: '1. Giá trước thuế:'
+    vatAmount: '2. Tiền thuế VAT ({rate}%):'
+    totalAmount: '3. TỔNG THANH TOÁN:'
+    jumpToWords: 'Đổi tổng tiền sang chữ →'
+    copySlip: 'Sao chép phiếu'
+    copySlipSuccess: 'Đã sao chép phiếu tính thuế VAT vào bộ nhớ tạm'
+    slipHeader: 'PHIẾU TÍNH THUẾ VAT'
+    beforeTaxLabel: 'Giá trước thuế'
+    vatAmountLabel: 'Tiền thuế VAT'
+    totalAmountLabel: 'Tổng thanh toán'
+
+  xml-to-json:
+    title: 'Chuyển XML sang JSON'
+    description: 'Chuyển đổi dữ liệu từ định dạng XML sang JSON.'
+
+  json-to-xml:
+    title: 'Chuyển JSON sang XML'
+    description: 'Chuyển đổi dữ liệu từ định dạng JSON sang XML.'
+
+  markdown-to-html:
+    title: 'Chuyển Markdown sang HTML'
+    description: 'Chuyển đổi Markdown sang HTML và hỗ trợ in/xuất PDF.'
+
+  safelink-decoder:
+    title: 'Giải mã Outlook Safelink'
+    description: 'Giải mã các đường dẫn Outlook SafeLink về liên kết gốc.'
+
+  email-normalizer:
+    title: 'Chuẩn hóa Email'
+    description: 'Chuẩn hóa địa chỉ email về định dạng chuẩn để dễ dàng so sánh và loại bỏ trùng lặp.'
+
+  regex-tester:
+    title: 'Kiểm tra Biểu thức chính quy (Regex)'
+    description: 'Kiểm tra và thử nghiệm các biểu thức chính quy (Regex) với văn bản mẫu.'
+
+  regex-memo:
+    title: 'Sổ tay Biểu thức chính quy (Regex)'
+    description: 'Bảng tra cứu nhanh biểu thức chính quy (Regex) trong Javascript.'
+
+  ascii-text-drawer:
+    title: 'Tạo chữ Nghệ thuật ASCII'
+    description: 'Tạo chữ nghệ thuật ASCII Art với nhiều kiểu font và phong cách độc đáo.'
 
   password-strength-analyser:
     title: Bộ phân tích độ mạnh mật khẩu

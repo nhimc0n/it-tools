@@ -102,6 +102,10 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
+      path: fileURLToPath(new URL('./src/utils/path-polyfill.ts', import.meta.url)),
+      'node:path': fileURLToPath(new URL('./src/utils/path-polyfill.ts', import.meta.url)),
+      crypto: fileURLToPath(new URL('./src/utils/crypto-polyfill.ts', import.meta.url)),
+      'node:crypto': fileURLToPath(new URL('./src/utils/crypto-polyfill.ts', import.meta.url)),
     },
   },
   define: {

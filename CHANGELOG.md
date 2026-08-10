@@ -2,6 +2,134 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## Version 2026.08.10-fiora.20
+
+### Git & Docker Deployment
+- **Dockerfile**: Cập nhật tệp Dockerfile tối ưu hóa quá trình cài đặt pnpm sản phẩm và bổ sung hướng dẫn push mã nguồn lên Git repository `nhimc0n/it-tools.git`.
+
+## Version 2026.08.10-fiora.19
+
+### Docker Build Fixes
+- **Dockerfile**: Sửa lỗi `@pnpm/exe.linux-x64` trên Linux container bằng cách kích hoạt `corepack` và thêm cờ `--no-frozen-lockfile`.
+- **Compose**: Loại bỏ thuộc tính `version` lỗi thời (obsolete warning) theo tiêu chuẩn Docker Compose v2.
+
+## Version 2026.08.10-fiora.18
+
+### Deployment Guidance
+- **Dockge Remote Git Build**: Hướng dẫn cấu hình `compose.yaml` cho Dockge xây dựng trực tiếp từ GitHub repository URL (`nhimc0n/it-tools.git#main`).
+
+## Version 2026.08.10-fiora.17
+
+### Deployment Configuration
+- **Docker Network**: Cập nhật tệp [`compose.yaml`](file:///Users/thang.dc/Documents/GitHub/it-tools/compose.yaml) và [`docker-compose.yml`](file:///Users/thang.dc/Documents/GitHub/it-tools/docker-compose.yml) tích hợp mạng Docker có sẵn `proxy_network` (external) cho Dockge & Reverse Proxy.
+
+## Version 2026.08.10-fiora.16
+
+### Deployment Support
+- **Dockge**: Tạo tệp [`compose.yaml`](file:///Users/thang.dc/Documents/GitHub/it-tools/compose.yaml) chuẩn định dạng cho trình quản lý Dockge trên Rocky Linux host (phục vụ tại cổng `6688`).
+
+## Version 2026.08.10-fiora.15
+
+### UI Refinements & Features
+- **fiora-vat-calculator**:
+  - Thêm nút sao chép nhanh (Icon Clipboard) tại từng dòng kết quả (Giá trước thuế, Tiền thuế VAT, Tổng thanh toán).
+  - Loại bỏ dấu `+` đằng trước số tiền thuế VAT cho sạch đẹp và nhất quán.
+- **UI Standard**: Đưa bán kính bo tròn góc (`border-radius`) từ `rounded-lg` về `rounded` tiêu chuẩn đồng nhất với thiết kế tổng thể của `it-tools`.
+
+## Version 2026.08.10-fiora.14
+
+### UI Refinements
+- **fiora-number-to-words**: Bỏ các chú thích phụ `(Chuẩn chính tả)` và `(Chuẩn kế toán)` trong tiêu đề các thẻ kết quả cho gọn gàng.
+
+## Version 2026.08.10-fiora.13
+
+### Features & UI Enhancements
+- **fiora-number-to-words**:
+  - Sắp xếp lại thứ tự kết quả theo chuẩn kế toán: **Tiếng Việt -> Tiếng Trung (Đại tả + Pinyin) -> Tiếng Anh**.
+  - Tối ưu chiều cao ô chứa kết quả (`h-10`) bằng chuẩn chiều cao với nút bấm Sao chép (Icon Clipboard) giúp giao diện gọn gàng và cân đối.
+
+## Version 2026.08.10-fiora.12
+
+### Features & UI Enhancements
+- **fiora-number-to-words**:
+  - Chuyển đổi bố cục kết quả thành 1 hàng dọc stacked (Tiếng Việt -> Tiếng Anh -> Tiếng Trung).
+  - Thêm chức năng đổi số tiền thành chữ Tiếng Anh theo chuẩn kế toán (`convertEn`).
+  - Thêm dòng hiển thị Pinyin đọc tiếng Trung bên dưới kết quả (có định dạng `select-none` không copy được).
+  - Thay thế chữ nút "Sao chép" thành Icon Clipboard nút bấm tối giản.
+
+## Version 2026.08.10-fiora.11
+
+### Features & UI Enhancements
+- **accounting tools**:
+  - Định dạng hiển thị dấu phẩy phân cách hàng nghìn (ví dụ `1,500,000`) tự động trong ô nhập số tiền cho 2 công cụ Đổi số thành chữ và Tính thuế VAT.
+  - Thêm nút sao chép nhanh số tiền gốc không chứa dấu phẩy (ví dụ `1500000`) dạng plain text.
+  - Giữ nguyên định dạng sao chép thủ công (bôi đen text) chứa dấu phẩy dạng plain text không dính style.
+  - Chuẩn hóa font chữ và giao diện thẻ kết quả khớp hoàn toàn với phong cách tối giản nguyên bản của `it-tools`.
+
+## Version 2026.08.10-fiora.10
+
+### Bug Fixes
+- **ascii-text-drawer**: Loại bỏ dấu gạch chéo cuối URL `fontPath` trong [`ascii-text-drawer.vue`](file:///Users/thang.dc/Documents/GitHub/it-tools/src/tools/ascii-text-drawer/ascii-text-drawer.vue) tránh tạo URL 400 Bad Request bị trùng dấu gạch chéo (`//3D-ASCII.flf`).
+
+## Version 2026.08.10-fiora.9
+
+### Bug Fixes
+- **ascii-text-drawer**: Sửa dấu gạch chéo cuối URL `fontPath` trong `figlet.defaults` và xử lý bắt lỗi callback an toàn triệt tiêu lỗi `TypeError: Cannot read properties of undefined (reading 'reduce')`.
+
+## Version 2026.08.10-fiora.8
+
+### Bug Fixes & Web Workers
+- **monaco-editor**: Tạo plugin khởi tạo Web Workers [`src/plugins/monaco.plugin.ts`](file:///Users/thang.dc/Documents/GitHub/it-tools/src/plugins/monaco.plugin.ts) và import vào [`src/main.ts`](file:///Users/thang.dc/Documents/GitHub/it-tools/src/main.ts) giúp Monaco Editor (`c-diff-editor`) chạy mượt mà trên Web Worker không làm đóng băng UI.
+
+## Version 2026.08.10-fiora.7
+
+### Bug Fixes
+- **ascii-text-drawer**:
+  - Sửa kiểu dữ liệu prop `:searchable="true"` thành kiểu boolean trong [`ascii-text-drawer.vue`](file:///Users/thang.dc/Documents/GitHub/it-tools/src/tools/ascii-text-drawer/ascii-text-drawer.vue).
+  - Đổi CDN tải font Figlet từ unpkg sang jsdelivr không bị trùng dấu gạch chéo `/` và triệt tiêu lỗi CORS / 404.
+
+## Version 2026.08.10-fiora.6
+
+### Bug Fixes & Polyfills
+- **crypto**: Tạo module polyfill Web Crypto [`src/utils/crypto-polyfill.ts`](file:///Users/thang.dc/Documents/GitHub/it-tools/src/utils/crypto-polyfill.ts) cho `crypto.randomBytes`, cấu hình alias trong [`vite.config.ts`](file:///Users/thang.dc/Documents/GitHub/it-tools/vite.config.ts) triệt tiêu lỗi `browser-external:crypto` khi sử dụng công cụ Bcrypt.
+
+## Version 2026.08.10-fiora.5
+
+### Bug Fixes & Polyfills
+- **vite**: Cấu hình polyfill cho module `path` (`path-browserify`) trong [`vite.config.ts`](file:///Users/thang.dc/Documents/GitHub/it-tools/vite.config.ts) triệt tiêu cảnh báo `browser-external:path: Module "path" has been externalized for browser compatibility`.
+
+## Version 2026.08.10-fiora.4
+
+### Bug Fixes & Warnings Cleaned
+- **icons**: Thay thế `@tabler/icons-vue` bằng `@vicons/tabler` trong [`Home.page.vue`](file:///Users/thang.dc/Documents/GitHub/it-tools/src/pages/Home.page.vue) triệt tiêu cảnh báo `[Vue warn]: Invalid prop: type check failed for prop "component"`.
+
+## Version 2026.08.10-fiora.3
+
+### Features & UI Cleanups
+- **branding**: Đổi tên thương hiệu và Logo góc trên bên trái từ `IT-Tools` thành `YURI TOOLS` ([`base.layout.vue`](file:///Users/thang.dc/Documents/GitHub/it-tools/src/layouts/base.layout.vue) & [`index.html`](file:///Users/thang.dc/Documents/GitHub/it-tools/index.html)).
+- **i18n & Refactoring**:
+  - Loại bỏ tiền tố "Fiora" khỏi tiêu đề 2 công cụ kế toán mới (`Đổi số thành chữ` & `Tính thuế VAT`).
+  - Hỗ trợ đa ngôn ngữ (Tiếng Việt, Tiếng Anh, Tiếng Trung) 100% cho giao diện của 2 công cụ kế toán mới.
+  - Khai báo bổ sung tất cả 8 tệp i18n key còn thiếu (`xml-to-json`, `json-to-xml`, `markdown-to-html`, `safelink-decoder`, `email-normalizer`, `regex-tester`, `regex-memo`, `ascii-text-drawer`) trong `en.yml`, `vi.yml`, và `zh.yml` triệt tiêu toàn bộ cảnh báo Intlify.
+
+## Version 2026.08.10-fiora.2
+
+### Bug Fixes & Warnings Cleaned
+- **i18n**: Bổ sung các locale key còn thiếu (`tools.fiora-number-to-words` & `tools.fiora-vat-calculator`) trong `en.yml`, `vi.yml`, và `zh.yml` triệt tiêu cảnh báo `[intlify] Not found key`.
+- **icons**: Thay thế `@tabler/icons-vue` bằng `@vicons/tabler` trong [`NavbarButtons.vue`](file:///Users/thang.dc/Documents/GitHub/it-tools/src/components/NavbarButtons.vue) loại bỏ cảnh báo Vue prop warning `type check failed for prop "component"`.
+
+## Version 2026.08.10-fiora.1
+
+### Bug Fixes
+- **tools-registry**: Fix `xmlFormatter` and `yamlViewer` missing imports in `src/tools/index.ts` causing `Uncaught ReferenceError`.
+
+## Version 2026.08.10-fiora
+
+### Fiora Accounting Features
+- **new category**: `Fiora Accounting` added at the top of category list.
+- **new tool**: `Fiora - Đổi số thành chữ` (`/fiora-number-to-words`) — Đổi số tiền VNĐ sang chữ Tiếng Việt chính tả và Tiếng Trung Đại Tả (大写) chống sửa đổi.
+- **new tool**: `Fiora - Tính thuế VAT` (`/fiora-vat-calculator`) — Tính thuế VAT (Thuận & Ngược) với quy tắc làm tròn theo Nghị định 174/2016/NĐ-CP (Round-Half-Up).
+
 ## Version 2024.10.22-7ca5933
 
 ### Features

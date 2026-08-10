@@ -60,6 +60,7 @@ search:
 tools:
   categories:
     favorite-tools: '我的收藏'
+    fiora accounting: 'Fiora 财务会计'
     crypto: '加密'
     converter: '转换器'
     web: Web
@@ -70,6 +71,93 @@ tools:
     measurement: '测量'
     text: '文本'
     data: '数据'
+
+  fiora-number-to-words:
+    title: '数字转大写金额 (越中)'
+    description: '将金额数字转换为越南语和中文财务大写金额 (大写).'
+    inputTitle: '输入需要转换的金额 (VND)'
+    placeholder: '输入金额...'
+    fast: '快捷:'
+    viCardTitle: '越南语'
+    enCardTitle: '英语'
+    zhCardTitle: '中文 (大写防篡改)'
+    emptyResult: '输入金额查看结果...'
+    copy: '复制'
+    copyRawToolTip: '复制不含逗号的纯数字'
+    copyRawSuccess: '已复制不含逗号的纯数字到剪贴板'
+    copyViSuccess: '已复制越南语大写到剪贴板'
+    copyEnSuccess: '已复制英语大写到剪贴板'
+    copyZhSuccess: '已复制中文大写到剪贴板'
+    copyViToolTip: '复制越南语大写'
+    copyEnToolTip: '复制英语大写'
+    copyZhToolTip: '复制中文大写'
+    error: '金额无效'
+
+  fiora-vat-calculator:
+    title: 'VAT 增值税计算器 (174法令)'
+    description: '根据越南 174/2016/NĐ-CP 法案计算 VAT 增值税 (四舍五入到个位数).'
+    configTitle: 'VAT 增值税计算设置 (174法令标准)'
+    modeLabel: '计算模式'
+    modeForward: '正算 (输入未税价)'
+    modeReverse: '逆算 (输入含税价)'
+    modeForwardShort: '正算'
+    modeReverseShort: '逆算'
+    inputForward: '输入未税金额 (VND)'
+    inputReverse: '输入含税金额 (VND)'
+    placeholder: '输入金额...'
+    copyRawToolTip: '复制不含逗号的纯数字'
+    copyRawSuccess: '已复制不含逗号的纯数字到剪贴板'
+    copyBeforeTaxToolTip: '复制税前金额'
+    copyVatAmountToolTip: '复制增值税额'
+    copyTotalAmountToolTip: '复制价税合计'
+    copyBeforeTaxSuccess: '已复制税前金额到剪贴板'
+    copyVatAmountSuccess: '已复制增值税额到剪贴板'
+    copyTotalAmountSuccess: '已复制价税合计到剪贴板'
+    rateLabel: '增值税率 (%)'
+    other: '自定义:'
+    resultTitle: 'VAT 增值税计算结果单'
+    beforeTax: '1. 税前金额:'
+    vatAmount: '2. 增值税额 ({rate}%):'
+    totalAmount: '3. 价税合计:'
+    jumpToWords: '总额转大写金额 →'
+    copySlip: '复制计算单'
+    copySlipSuccess: '已复制 VAT 计算单到剪贴板'
+    slipHeader: 'VAT 增值税计算单'
+    beforeTaxLabel: '税前金额'
+    vatAmountLabel: '增值税额'
+    totalAmountLabel: '价税合计'
+
+  xml-to-json:
+    title: 'XML 转 JSON'
+    description: '将 XML 格式转换为 JSON 格式。'
+
+  json-to-xml:
+    title: 'JSON 转 XML'
+    description: '将 JSON 格式转换为 XML 格式。'
+
+  markdown-to-html:
+    title: 'Markdown 转 HTML'
+    description: '将 Markdown 转换为 HTML 并支持导出 PDF。'
+
+  safelink-decoder:
+    title: 'Outlook Safelink 解码器'
+    description: '解码 Outlook SafeLink 安全链接。'
+
+  email-normalizer:
+    title: '邮箱格式标准化'
+    description: '将电子邮件地址标准化为统一格式，便于去重和数据清洗。'
+
+  regex-tester:
+    title: '正则表达式测试器'
+    description: '使用示例文本测试您的正则表达式。'
+
+  regex-memo:
+    title: '正则表达式速查表'
+    description: 'Javascript 正则表达式常用语法速查手册。'
+
+  ascii-text-drawer:
+    title: 'ASCII 艺术字生成器'
+    description: '使用多种字体和样式生成 ASCII 艺术字。'
 
   password-strength-analyser:
     title: 密码强度分析仪

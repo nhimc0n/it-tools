@@ -5,6 +5,7 @@ import { createHead } from '@vueuse/head';
 import { registerSW } from 'virtual:pwa-register';
 import shadow from 'vue-shadow-dom';
 import { plausible } from './plugins/plausible.plugin';
+import './plugins/monaco.plugin';
 
 import 'virtual:uno.css';
 

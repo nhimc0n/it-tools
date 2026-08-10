@@ -125,6 +125,7 @@ tools:
     slipHeader: 'VAT 增值税计算单'
     beforeTaxLabel: '税前金额'
     vatAmountLabel: '增值税额'
+    totalAmountLabel: '价税合计'
   text-uppercase-converter:
     title: '大小写转换器'
     description: '快速将文本转换为全小写、句首大写、词首大写、全大写。'

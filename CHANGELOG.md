@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## Version 2026.08.10-fiora.26
+
+### Fix i18n Key Missing Warnings
+- **fiora-vat-calculator**: Phục hồi đầy đủ các khóa dịch i18n bị thiếu (`rateLabel`, `resultTitle`, `copySlipSuccess`, `beforeTax`, `vatAmount`, `totalAmount`, `jumpToWords`, ...) trên cả 3 tệp ngôn ngữ (`vi.yml`, `en.yml`, `zh.yml`), loại bỏ hoàn toàn các cảnh báo missing key trong browser console.
+
 ## Version 2026.08.10-fiora.25
 
 ### Internationalization (i18n) Improvements

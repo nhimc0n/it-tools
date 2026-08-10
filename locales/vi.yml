@@ -113,6 +113,14 @@ tools:
     copyBeforeTaxSuccess: 'Đã sao chép giá trước thuế vào bộ nhớ tạm'
     copyVatAmountSuccess: 'Đã sao chép tiền thuế VAT vào bộ nhớ tạm'
     copyTotalAmountSuccess: 'Đã sao chép tổng tiền thanh toán vào bộ nhớ tạm'
+
+  text-uppercase-converter:
+    title: 'Chuyển đổi chữ Hoa - Thường'
+    description: 'Chuyển văn bản thành chữ IN HOA, in thường, viết hoa đầu từ, viết hoa đầu câu nhanh chóng.'
+
+  invoice-fee-calculator:
+    title: 'Tính phí xuất hóa đơn & Chiết khấu'
+    description: 'Tính chênh lệch giá bán vs giá xuất hóa đơn, phí xuất hóa đơn, tiền thuế VAT và số tiền hoàn thừa cho khách.'
     rateLabel: 'THUẾ SUẤT VAT (%)'
     other: 'Khác:'
     resultTitle: 'Phiếu kết quả tính thuế VAT'

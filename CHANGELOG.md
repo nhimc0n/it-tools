@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## Version 2026.08.10-fiora.22
+
+### New Modules
+- **text-uppercase-converter**: Bổ sung module [Chuyển đổi chữ Hoa - Thường](file:///Users/thang.dc/Documents/GitHub/it-tools/src/tools/text-uppercase-converter) hỗ trợ tiếng Việt (IN HOA, in thường, Viết Hoa Đầu Từ, Viết Hoa Đầu Câu, Toggle Case) kèm nút sao chép nhanh từng dòng.
+- **invoice-fee-calculator**: Bổ sung module [Tính phí xuất hóa đơn & Chiết khấu](file:///Users/thang.dc/Documents/GitHub/it-tools/src/tools/invoice-fee-calculator) cho phép tính giá bán, giá xuất hóa đơn, tiền chênh lệch, phí xuất hóa đơn (20%), tiền thuế VAT, tổng chi phí khách chịu thêm, tổng tiền chuyển khoản và số tiền thừa bên bán cần hoàn lại cho khách.
+
 ## Version 2026.08.10-fiora.21
 
 ### Documentation Update

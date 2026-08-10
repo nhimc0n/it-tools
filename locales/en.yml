@@ -113,6 +113,14 @@ tools:
     copyBeforeTaxSuccess: 'Copied before-tax amount to clipboard'
     copyVatAmountSuccess: 'Copied VAT amount to clipboard'
     copyTotalAmountSuccess: 'Copied total amount to clipboard'
+
+  text-uppercase-converter:
+    title: 'Text Case Converter'
+    description: 'Convert text to UPPERCASE, lowercase, Title Case, Sentence case quickly.'
+
+  invoice-fee-calculator:
+    title: 'Invoice Fee & Discount Calculator'
+    description: 'Calculate selling vs invoice price difference, invoice fee, VAT, and customer refund amount.'
     rateLabel: 'VAT RATE (%)'
     other: 'Custom:'
     resultTitle: 'VAT Calculation Result Slip'

@@ -89,11 +89,13 @@ import { tool as xmlFormatter } from './xml-formatter';
 import { tool as yamlViewer } from './yaml-viewer';
 import { tool as fioraNumberToWords } from './fiora-number-to-words';
 import { tool as fioraVatCalculator } from './fiora-vat-calculator';
+import { tool as textUppercaseConverter } from './text-uppercase-converter';
+import { tool as invoiceFeeCalculator } from './invoice-fee-calculator';
 
 export const toolsByCategory: ToolCategory[] = [
   {
     name: 'Fiora Accounting',
-    components: [fioraNumberToWords, fioraVatCalculator],
+    components: [fioraNumberToWords, fioraVatCalculator, invoiceFeeCalculator],
   },
   {
     name: 'Crypto',
@@ -109,6 +111,7 @@ export const toolsByCategory: ToolCategory[] = [
       base64FileConverter,
       colorConverter,
       caseConverter,
+      textUppercaseConverter,
       textToNatoAlphabet,
       textToBinary,
       textToUnicode,

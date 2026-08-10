@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## Version 2026.08.10-fiora.29
+
+### UI/UX Improvements
+- **Currency Converter**: 
+  - Điều chỉnh kích thước chữ hiển thị tỉ giá hối đoái nhỏ lại (từ `text-xl` xuống `text-lg`) để cân đối giao diện.
+  - Sửa lại logic bảng tỉ giá khi ngôn ngữ là Tiếng Trung: Đảo ngược chiều tỉ giá hiển thị thành `1 CNY = xxx VND` và `1 CNY = xxx TWD` giống với mong muốn của người dùng thay vì lấy VND làm mốc.
+  - Bổ sung tự động định dạng dấu phẩy phân cách hàng nghìn (thousands separator) cho các ô nhập liệu khi người dùng nhập số (Ví dụ: `10,000,000`).
+
 ## Version 2026.08.10-fiora.28
 
 ### Fix i18n Warnings

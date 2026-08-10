@@ -10,7 +10,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 text-center bg-gray-50 dark:bg-gray-800 p-4 rounded-lg shadow-inner">
           <div v-for="rateInfo in displayRates" :key="rateInfo.currency" class="flex flex-col">
             <span class="text-gray-500 text-sm font-semibold">{{ rateInfo.label }}</span>
-            <span class="text-xl font-bold text-primary">{{ rateInfo.value }}</span>
+            <span class="text-lg font-bold text-primary">{{ rateInfo.value }}</span>
           </div>
         </div>
         <div class="text-xs text-gray-400 text-right mt-2">
@@ -23,28 +23,24 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <c-input-text
           v-model:value="inputs.VND"
-          type="number"
           :label="$t('tools.currency-converter.vndLabel')"
           :placeholder="$t('tools.currency-converter.vndPlaceholder')"
           :disabled="loading"
         />
         <c-input-text
           v-model:value="inputs.USD"
-          type="number"
           :label="$t('tools.currency-converter.usdLabel')"
           :placeholder="$t('tools.currency-converter.usdPlaceholder')"
           :disabled="loading"
         />
         <c-input-text
           v-model:value="inputs.CNY"
-          type="number"
           :label="$t('tools.currency-converter.cnyLabel')"
           :placeholder="$t('tools.currency-converter.cnyPlaceholder')"
           :disabled="loading"
         />
         <c-input-text
           v-model:value="inputs.TWD"
-          type="number"
           :label="$t('tools.currency-converter.twdLabel')"
           :placeholder="$t('tools.currency-converter.twdPlaceholder')"
           :disabled="loading"
@@ -121,13 +117,13 @@ const displayRates = computed(() => {
   } else if (currentLocale === 'zh') {
     // Base is CNY
     const usdToCny = rates.value.CNY / rates.value.USD;
-    const vndToCny = rates.value.CNY / rates.value.VND;
-    const twdToCny = rates.value.CNY / rates.value.TWD;
+    const cnyToVnd = rates.value.VND / rates.value.CNY;
+    const cnyToTwd = rates.value.TWD / rates.value.CNY;
     
     return [
       { currency: 'USD', label: '1 USD =', value: `${format(usdToCny)} CNY` },
-      { currency: 'VND', label: '10000 VND =', value: `${format(vndToCny * 10000)} CNY` }, // Using 10k for readability
-      { currency: 'TWD', label: '100 TWD =', value: `${format(twdToCny * 100)} CNY` }
+      { currency: 'VND', label: '1 CNY =', value: `${format(cnyToVnd)} VND` },
+      { currency: 'TWD', label: '1 CNY =', value: `${format(cnyToTwd)} TWD` }
     ];
   } else {
     // Base is USD
@@ -174,10 +170,15 @@ const updateOthers = (currency: keyof ExchangeRates, value: string) => {
   isProgrammaticUpdate = true;
   
   const formatOutput = (val: number, cur: string) => {
-     if (cur === 'VND') return Math.round(val).toString();
-     return Number(val.toFixed(4)).toString();
+     if (cur === 'VND') return new Intl.NumberFormat('en-US').format(Math.round(val));
+     return new Intl.NumberFormat('en-US', { maximumFractionDigits: 4 }).format(val);
   };
   
+  // Format the current field itself to ensure commas are added as the user types
+  if (currency === 'VND' && value !== '') {
+    inputs.value[currency] = formatOutput(numVal, currency as string);
+  }
+
   const keys: (keyof ExchangeRates)[] = ['VND', 'USD', 'CNY', 'TWD'];
   keys.forEach(k => {
     if (k !== currency) {

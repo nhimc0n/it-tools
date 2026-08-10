@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## Version 2026.08.10-fiora.24
+
+### UI & UX Refinements
+- **text-uppercase-converter**: 
+  - Loại bỏ tính năng Đảo ngược hoa/thường (Toggle Case) và thanh nút bấm thao tác nhanh.
+  - Sắp xếp lại thứ tự ưu tiên kết quả: 1. Chữ in thường, 2. Viết hoa chữ đầu câu, 3. Viết hoa đầu mỗi từ, 4. Chữ IN HOA.
+  - Tối ưu đa ngôn ngữ (i18n): Loại bỏ các chú thích tiếng Anh thừa trong nhãn tiếng Việt, hiển thị chuẩn xác theo ngôn ngữ người dùng lựa chọn.
+
 ## Version 2026.08.10-fiora.23
 
 ### UI & Navigation Optimization

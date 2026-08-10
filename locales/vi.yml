@@ -116,7 +116,13 @@ tools:
 
   text-uppercase-converter:
     title: 'Chuyển đổi chữ Hoa - Thường'
-    description: 'Chuyển văn bản thành chữ IN HOA, in thường, viết hoa đầu từ, viết hoa đầu câu nhanh chóng.'
+    description: 'Chuyển văn bản thành chữ in thường, viết hoa đầu câu, viết hoa đầu mỗi từ, chữ in hoa nhanh chóng.'
+    inputLabel: 'Văn bản cần chuyển đổi:'
+    placeholder: 'Nhập văn bản cần đổi chữ in hoa / in thường...'
+    lowercase: 'Chữ in thường:'
+    sentenceCase: 'Viết hoa chữ đầu câu:'
+    capitalCase: 'Viết hoa đầu mỗi từ:'
+    uppercase: 'Chữ IN HOA:'
 
   invoice-fee-calculator:
     title: 'Tính phí xuất hóa đơn & Chiết khấu'

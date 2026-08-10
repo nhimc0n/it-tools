@@ -116,7 +116,13 @@ tools:
 
   text-uppercase-converter:
     title: 'Text Case Converter'
-    description: 'Convert text to UPPERCASE, lowercase, Title Case, Sentence case quickly.'
+    description: 'Convert text to lowercase, sentence case, title case, and UPPERCASE quickly.'
+    inputLabel: 'Text to convert:'
+    placeholder: 'Enter text to convert case...'
+    lowercase: 'Lowercase:'
+    sentenceCase: 'Sentence case:'
+    capitalCase: 'Title case:'
+    uppercase: 'UPPERCASE:'
 
   invoice-fee-calculator:
     title: 'Invoice Fee & Discount Calculator'

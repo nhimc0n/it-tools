@@ -21,15 +21,3 @@ export function toSentenceCase(text: string): string {
     .toLowerCase()
     .replace(/(^\s*|[.!?]\s+)(\S)/g, (_, p1, p2) => p1 + p2.toUpperCase());
 }
-
-export function toToggleCase(text: string): string {
-  return text
-    .split('')
-    .map((char) => {
-      if (char === char.toUpperCase()) {
-        return char.toLowerCase();
-      }
-      return char.toUpperCase();
-    })
-    .join('');
-}

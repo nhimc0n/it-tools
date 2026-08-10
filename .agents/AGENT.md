@@ -49,6 +49,31 @@
   - Áp dụng quy tắc làm tròn **Round-Half-Up theo Nghị định 174/2016/NĐ-CP**.
   - Tích hợp nút Sao chép (Icon Clipboard) tại từng dòng kết quả (Giá trước thuế, Tiền thuế VAT, Tổng thanh toán).
 
+### 2.4. Module 3: Chuyển Đổi Định Dạng Chữ (`/text-uppercase-converter`)
+- **Thư mục:** `src/tools/text-uppercase-converter/`
+- **Tệp tin:** `text-uppercase-converter.service.ts`, `text-uppercase-converter.service.test.ts`, `text-uppercase-converter.vue`, `index.ts`.
+- **Chức năng & Quy tắc:**
+  - Chuyển đổi văn bản đa ngôn ngữ thành 4 định dạng chính: Chữ thường (lowercase), Viết hoa chữ cái đầu câu (Sentence case), Viết hoa mỗi chữ cái đầu từ (Capitalize case), Chữ IN HOA (UPPERCASE).
+  - Tự động hiển thị song song 4 kết quả với nút sao chép (copy) bên cạnh.
+  - Hỗ trợ đa ngôn ngữ không bị lỗi Font.
+
+### 2.5. Module 4: Tính Phí Hóa Đơn & Chiết Khấu (`/invoice-fee-calculator`)
+- **Thư mục:** `src/tools/invoice-fee-calculator/`
+- **Tệp tin:** `invoice-fee-calculator.service.ts`, `invoice-fee-calculator.service.test.ts`, `invoice-fee-calculator.vue`, `index.ts`.
+- **Chức năng & Quy tắc:**
+  - Tính toán các khoản chênh lệch giữa giá bán thực tế chưa VAT và giá xuất hóa đơn khách yêu cầu.
+  - Tính toán VAT tự động từ giá xuất, kết hợp tỉ lệ phần trăm phí dịch vụ (thường là 20% tiền chênh lệch chưa VAT).
+  - Tự động sinh **Bảng Tính Phí Xuất Hóa Đơn** (Slip) bằng văn bản để có thể copy và gửi cho khách hàng nhanh chóng.
+
+### 2.6. Module 5: Chuyển Đổi Tiền Tệ (`/currency-converter`)
+- **Thư mục:** `src/tools/currency-converter/`
+- **Tệp tin:** `currency-converter.service.ts`, `currency-converter.service.test.ts`, `currency-converter.vue`, `index.ts`.
+- **Chức năng & Quy tắc:**
+  - Lấy tỉ giá hối đoái trực tiếp từ API và cache lưu trữ local 24 giờ.
+  - Hỗ trợ nhập và chuyển đổi chéo tự động (two-way binding) giữa 4 đồng tiền chính: VNĐ, USD, CNY (Nhân Dân Tệ), TWD (Đài Tệ).
+  - Giao diện bảng tỉ giá thay đổi linh hoạt theo ngôn ngữ (Base Currency: VNĐ cho Tiếng Việt, USD cho Tiếng Anh, CNY cho Tiếng Trung).
+  - Định dạng hiển thị dấu phẩy phân tách hàng nghìn thuận tiện (Thousands separator).
+
 ---
 
 ## 3. Lệnh Thao Tác & Triển Khai

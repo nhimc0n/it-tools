@@ -167,6 +167,22 @@ tools:
     vatAmountLabel: 'VAT amount'
     totalAmountLabel: 'Total amount'
 
+  currency-converter:
+    title: 'Currency Converter'
+    description: 'Convert between VND, USD, CNY, TWD with live exchange rates.'
+    ratesCardTitle: 'Live Exchange Rates'
+    inputCardTitle: 'Currency Converter'
+    fetchError: 'Failed to fetch latest rates. Using cached rates.'
+    lastUpdated: 'Last updated'
+    vndLabel: 'Vietnamese Dong (VND)'
+    vndPlaceholder: 'Enter VND amount...'
+    usdLabel: 'US Dollar (USD)'
+    usdPlaceholder: 'Enter USD amount...'
+    cnyLabel: 'Chinese Yuan (CNY)'
+    cnyPlaceholder: 'Enter CNY amount...'
+    twdLabel: 'New Taiwan Dollar (TWD)'
+    twdPlaceholder: 'Enter TWD amount...'
+
   xml-to-json:
     title: 'XML to JSON'
     description: 'Convert XML to JSON'

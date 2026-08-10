@@ -91,11 +91,12 @@ import { tool as fioraNumberToWords } from './fiora-number-to-words';
 import { tool as fioraVatCalculator } from './fiora-vat-calculator';
 import { tool as textUppercaseConverter } from './text-uppercase-converter';
 import { tool as invoiceFeeCalculator } from './invoice-fee-calculator';
+import { tool as currencyConverter } from './currency-converter';
 
 export const toolsByCategory: ToolCategory[] = [
   {
     name: 'Yuri Tools',
-    components: [fioraNumberToWords, fioraVatCalculator, invoiceFeeCalculator, textUppercaseConverter],
+    components: [fioraNumberToWords, fioraVatCalculator, invoiceFeeCalculator, textUppercaseConverter, currencyConverter],
   },
   {
     name: 'Crypto',

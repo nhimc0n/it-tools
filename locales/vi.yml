@@ -165,6 +165,22 @@ tools:
     copySlipCopiedBtn: 'Đã sao chép bảng tính!'
     slipHeader: 'BẢNG TÍNH PHÍ XUẤT HÓA ĐƠN & CHIẾT KHẤU'
 
+  currency-converter:
+    title: 'Chuyển đổi tiền tệ'
+    description: 'Chuyển đổi trực tiếp giữa VNĐ, USD, NDT, Đài tệ với tỉ giá mới nhất.'
+    ratesCardTitle: 'Bảng Tỉ Giá Hiện Tại'
+    inputCardTitle: 'Công cụ Chuyển Đổi'
+    fetchError: 'Không thể tải tỉ giá mới. Đang sử dụng tỉ giá cũ.'
+    lastUpdated: 'Cập nhật lần cuối'
+    vndLabel: 'Tiền Việt Nam (VNĐ)'
+    vndPlaceholder: 'Nhập số tiền VNĐ...'
+    usdLabel: 'Đô la Mỹ (USD)'
+    usdPlaceholder: 'Nhập số tiền USD...'
+    cnyLabel: 'Nhân dân tệ (CNY)'
+    cnyPlaceholder: 'Nhập số tiền CNY...'
+    twdLabel: 'Đài tệ (TWD)'
+    twdPlaceholder: 'Nhập số tiền TWD...'
+
   xml-to-json:
     title: 'Chuyển XML sang JSON'
     description: 'Chuyển đổi dữ liệu từ định dạng XML sang JSON.'

@@ -60,7 +60,7 @@ search:
 tools:
   categories:
     favorite-tools: '我的收藏'
-    fiora accounting: 'Fiora 财务会计'
+    yuri tools: 'Yuri Tools'
     crypto: '加密'
     converter: '转换器'
     web: Web
@@ -162,7 +162,23 @@ tools:
     itemRefundAmountSub: '= 转账金额 ({totalInvoiceAmount}) - 实际应付 ({actualCustomerPayment})'
     copySlipBtn: '复制明细单发给客户'
     copySlipCopiedBtn: '已复制明细单！'
-    slipHeader: '发票手续费与折扣计算单'
+    slipHeader: '发票开具费用及折扣计算单'
+
+  currency-converter:
+    title: '货币兑换器'
+    description: '使用最新汇率在越南盾、美元、人民币和新台币之间进行转换。'
+    ratesCardTitle: '实时汇率表'
+    inputCardTitle: '货币兑换工具'
+    fetchError: '无法获取最新汇率。使用旧汇率。'
+    lastUpdated: '最后更新'
+    vndLabel: '越南盾 (VND)'
+    vndPlaceholder: '输入越南盾金额...'
+    usdLabel: '美元 (USD)'
+    usdPlaceholder: '输入美元金额...'
+    cnyLabel: '人民币 (CNY)'
+    cnyPlaceholder: '输入人民币金额...'
+    twdLabel: '新台币 (TWD)'
+    twdPlaceholder: '输入新台币金额...'
 
   xml-to-json:
     title: 'XML 转 JSON'

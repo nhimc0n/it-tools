@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## Version 2026.08.10-fiora.28
+
+### Fix i18n Warnings
+- **Yuri Tools Category**: Fix missing category name `yuri tools` in Chinese locale (`zh.yml`).
+
+## Version 2026.08.10-fiora.27
+
+### New Features
+- **Currency Converter**: Thêm module Chuyển đổi tiền tệ (Currency Converter) trong nhánh Yuri Tools. Hỗ trợ quy đổi chéo trực tiếp giữa 4 loại tiền tệ: VNĐ, USD, NDT (CNY), Đài tệ (TWD) với thiết kế responsive đẹp mắt.
+- **Live Exchange Rates**: Tự động fetch tỉ giá tiền tệ mới nhất từ API với cơ chế cache 24 giờ.
+- **Dynamic Rates Board**: Bảng hiển thị tỉ giá thông minh tự thay đổi đồng tiền gốc (Base currency) dựa theo ngôn ngữ đang sử dụng (Việt -> VNĐ, Anh -> USD, Trung -> CNY). Hỗ trợ đầy đủ ngôn ngữ Anh, Việt, Trung.
+
 ## Version 2026.08.10-fiora.26
 
 ### Fix i18n Key Missing Warnings

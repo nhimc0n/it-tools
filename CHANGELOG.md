@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## Version 2026.08.10-fiora.25
+
+### Internationalization (i18n) Improvements
+- **Language Selector**: Giới hạn danh sách chọn ngôn ngữ trên giao diện chỉ hiển thị 3 ngôn ngữ chính: Tiếng Việt (`vi`), Tiếng Anh (`en`), và Tiếng Trung (`zh`).
+- **invoice-fee-calculator**: Chuyển toàn bộ văn bản cứng trong module sang hệ thống i18n (`$t`), hỗ trợ dịch chuẩn xác 100% theo Tiếng Việt, Tiếng Anh và Tiếng Trung.
+- **Full Chinese Support**: Bổ sung đầy đủ bản dịch Tiếng Trung (`zh.yml`) cho cả 4 module độc quyền (Chuyển số thành chữ, Tính thuế VAT, Tính phí xuất hóa đơn & Chiết khấu, Chuyển đổi chữ Hoa - Thường).
+
 ## Version 2026.08.10-fiora.24
 
 ### UI & UX Refinements

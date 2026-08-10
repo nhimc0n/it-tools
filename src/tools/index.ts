@@ -94,8 +94,8 @@ import { tool as invoiceFeeCalculator } from './invoice-fee-calculator';
 
 export const toolsByCategory: ToolCategory[] = [
   {
-    name: 'Fiora Accounting',
-    components: [fioraNumberToWords, fioraVatCalculator, invoiceFeeCalculator],
+    name: 'Yuri Tools',
+    components: [fioraNumberToWords, fioraVatCalculator, invoiceFeeCalculator, textUppercaseConverter],
   },
   {
     name: 'Crypto',
@@ -111,7 +111,6 @@ export const toolsByCategory: ToolCategory[] = [
       base64FileConverter,
       colorConverter,
       caseConverter,
-      textUppercaseConverter,
       textToNatoAlphabet,
       textToBinary,
       textToUnicode,

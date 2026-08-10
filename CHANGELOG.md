@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## Version 2026.08.10-fiora.23
+
+### UI & Navigation Optimization
+- **Yuri Tools Category**: Đổi tên danh mục đầu trang thành **Yuri Tools**, đưa toàn bộ 4 công cụ chính (*Đổi số thành chữ*, *Tính thuế VAT*, *Tính phí xuất hóa đơn & Chiết khấu*, *Chuyển đổi chữ Hoa - Thường*) lên vị trí ưu tiên đầu tiên ở menu chính giúp người dùng dễ dàng truy cập ngay lập tức.
+
 ## Version 2026.08.10-fiora.22
 
 ### New Modules

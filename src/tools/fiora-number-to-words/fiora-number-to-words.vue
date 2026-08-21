@@ -14,7 +14,7 @@ const formatNumber = (value: number | null) => {
 };
 
 const parseNumber = (input: string) => {
-  const clean = input.replace(/,/g, '').trim();
+  const clean = input.replace(/[,.]/g, '').trim();
   if (clean === '') return null;
   const num = Number(clean);
   return isNaN(num) ? null : num;

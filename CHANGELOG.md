@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## Version 2026.08.10-fiora.30
+
+### Bug Fixes
+- **fiora-number-to-words**: Sửa lỗi phân tích số tiền khi dán/nhập theo định dạng có dấu chấm phân cách hàng nghìn (ví dụ `1.500.000`) — trước đây `parseNumber` chỉ loại bỏ dấu phẩy nên gặp dấu chấm sẽ ra `NaN` và không hiển thị kết quả. Nay loại bỏ cả dấu phẩy lẫn dấu chấm trước khi parse, hỗ trợ đúng cả 2 kiểu định dạng số.
+
 ## Version 2026.08.10-fiora.29
 
 ### UI/UX Improvements

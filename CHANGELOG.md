@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 - **fiora-number-to-words**: Sửa lỗi phân tích số tiền khi dán/nhập theo định dạng có dấu chấm phân cách hàng nghìn (ví dụ `1.500.000`) — trước đây `parseNumber` chỉ loại bỏ dấu phẩy nên gặp dấu chấm sẽ ra `NaN` và không hiển thị kết quả. Nay loại bỏ cả dấu phẩy lẫn dấu chấm trước khi parse, hỗ trợ đúng cả 2 kiểu định dạng số.
+- **fiora-vat-calculator**: Áp dụng cùng bản sửa lỗi parse ở trên cho ô nhập số tiền của cả 2 chiều tính thuế (Exclusive - Enter before-tax & Inclusive - Enter after-tax), tránh cùng lỗi `NaN` khi dán số theo định dạng dấu chấm.
 
 ## Version 2026.08.10-fiora.29
 
